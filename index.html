@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rubland Smoke Houses — Trusted in Kerala</title>
+  <meta name="description" content="Rubland Smoke Houses — smokehouse design, installations and accessories. Accredited by the Rubber Board of India." />
+  <style>
+    /* ====== Reset & base ====== */
+    :root{
+      --bg:#FAF3E0; /* cream */
+      --char:#2E2E2E;
+      --wood:#5C4638;
+      --glow:#FF8C42;
+      --glass: rgba(255,255,255,0.55);
+      --muted:#6b6b6b;
+      --maxw:1200px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,'Helvetica Neue',Arial; background:linear-gradient(180deg,#fff 0%,#fbfaf8 60%);color:var(--char);-webkit-font-smoothing:antialiased}
+    a{color:var(--wood);text-decoration:none}
+    .container{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+
+    /* ====== Header / nav ====== */
+    header{position:sticky;top:0;z-index:40;backdrop-filter: blur(6px);background:linear-gradient(180deg,rgba(255,255,255,0.6),rgba(255,255,255,0.35));border-bottom:1px solid rgba(0,0,0,0.04)}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 20px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--wood),#7b5b4b);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:18px;box-shadow:0 6px 18px rgba(92,70,56,0.25)}
+    .brand h1{margin:0;font-size:18px;line-height:1}
+    .brand p{margin:0;font-size:12px;color:var(--muted)}
+    nav ul{display:flex;gap:18px;align-items:center;list-style:none;margin:0;padding:0}
+    nav a{font-weight:600;font-size:14px;padding:8px 10px;border-radius:8px}
+    nav a:hover{background:rgba(0,0,0,0.03)}
+    .cta{background:var(--glow);color:white;padding:8px 12px;border-radius:10px;font-weight:700;box-shadow:0 8px 20px rgba(255,140,66,0.18)}
+
+    /* ====== Hero ====== */
+    .hero{position:relative;overflow:hidden;padding:56px 0 40px}
+    .hero-grid{display:grid;grid-template-columns:1fr 460px;gap:36px;align-items:center}
+    .hero-left h2{font-size:40px;margin:0 0 10px;line-height:1.02}
+    .hero-left p{color:var(--muted);margin:0 0 18px}
+    .hero-buttons{display:flex;gap:12px}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border-radius:10px;border:1px solid rgba(0,0,0,0.06);background:linear-gradient(180deg,white, #fff);cursor:pointer}
+    .btn-ghost{background:transparent}
+    .card{background:white;border-radius:14px;padding:16px;box-shadow:0 18px 40px rgba(35,35,35,0.06);border:1px solid rgba(0,0,0,0.04)}
+
+    /* hero visual area */
+    .hero-visual{position:relative;height:420px;border-radius:18px;overflow:hidden}
+    .smoke-canvas{position:absolute;inset:0;pointer-events:none}
+    .hero-image{position:absolute;inset:0;background-size:cover;background-position:center;filter:contrast(0.9) brightness(0.95)}
+    .hero-foreground{position:absolute;inset:auto 12px 12px 12px;display:flex;flex-direction:column;gap:8px}
+    .small-stat{background:linear-gradient(180deg,rgba(255,255,255,0.9),rgba(255,255,255,0.85));padding:10px;border-radius:10px;display:flex;gap:10px;align-items:center;border:1px solid rgba(0,0,0,0.03)}
+
+    /* sections */
+    section{padding:70px 0}
+    h3.section-title{font-size:22px;margin:0 0 18px}
+    .lead{color:var(--muted);max-width:780px}
+
+    /* about */
+    .about-grid{display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:start}
+    .timeline{background:linear-gradient(180deg,#fff,#fff);padding:12px;border-radius:12px;border:1px solid rgba(0,0,0,0.04)}
+    .timeline-item{display:flex;gap:12px;padding:10px 0;border-bottom:1px dashed rgba(0,0,0,0.04)}
+    .timeline-item:last-child{border-bottom:none}
+
+    /* products */
+    .products-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .product{background:linear-gradient(180deg,#fff,#fff);border-radius:14px;padding:14px;transition:transform .35s cubic-bezier(.2,.9,.3,1),box-shadow .35s;border:1px solid rgba(0,0,0,0.04)}
+    .product:hover{transform:translateY(-10px) rotateX(3deg);box-shadow:0 30px 60px rgba(92,70,56,0.08)}
+    .product img{width:100%;height:160px;object-fit:cover;border-radius:10px}
+    .product h4{margin:10px 0 6px}
+    .product p{font-size:13px;color:var(--muted);margin:0}
+
+    /* advantages */
+    .advantages{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .adv{background:linear-gradient(180deg,#fff,#fff);padding:18px;border-radius:12px;text-align:center;border:1px solid rgba(0,0,0,0.04)}
+
+    /* gallery */
+    .gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+    .gallery-grid img{width:100%;height:140px;object-fit:cover;border-radius:8px;cursor:pointer;transition:transform .25s}
+    .gallery-grid img:hover{transform:scale(1.03)}
+
+    /* counters & news */
+    .counters{display:flex;gap:24px}
+    .counter{padding:18px;border-radius:12px;background:linear-gradient(180deg,#fff,#fff);border:1px solid rgba(0,0,0,0.04)}
+    .counter strong{display:block;font-size:22px}
+    .news-list{display:flex;flex-direction:column;gap:10px}
+    .news-item{background:white;padding:12px;border-radius:10px;border:1px solid rgba(0,0,0,0.04)}
+
+    /* contact */
+    .contact-grid{display:grid;grid-template-columns:1fr 360px;gap:24px}
+    form{display:flex;flex-direction:column;gap:12px}
+    input,textarea{padding:12px;border-radius:10px;border:1px solid rgba(0,0,0,0.08);font-size:14px}
+    .map-placeholder{height:260px;border-radius:12px;background:linear-gradient(180deg,#eee,#ddd);display:flex;align-items:center;justify-content:center;color:var(--muted);font-weight:700}
+
+    /* footer */
+    footer{padding:28px 0;background:linear-gradient(180deg,#fff,#faf7f5);border-top:1px solid rgba(0,0,0,0.03)}
+    .footer-grid{display:flex;justify-content:space-between;align-items:center;gap:14px}
+
+    /* responsive */
+    @media (max-width:1000px){
+      .hero-grid{grid-template-columns:1fr}
+      .about-grid{grid-template-columns:1fr}
+      .products-grid{grid-template-columns:repeat(2,1fr)}
+      .gallery-grid{grid-template-columns:repeat(2,1fr)}
+      nav ul{display:none}
+    }
+    @media (max-width:600px){
+      .products-grid{grid-template-columns:1fr}
+      .gallery-grid{grid-template-columns:1fr}
+      .hero-left h2{font-size:28px}
+      .logo{width:48px;height:48px}
+    }
+
+    /* small floating JJ coders badge */
+    .jj-badge{position:fixed;right:18px;bottom:18px;background:linear-gradient(180deg,#fff,#fff);padding:10px 12px;border-radius:14px;box-shadow:0 12px 30px rgba(92,70,56,0.12);display:flex;gap:10px;align-items:center;border:1px solid rgba(0,0,0,0.04);z-index:80}
+    .jj-badge img{width:36px;height:36px;border-radius:8px}
+
+    /* lightbox */
+    .lightbox{position:fixed;inset:0;background:rgba(0,0,0,0.75);display:flex;align-items:center;justify-content:center;z-index:200;opacity:0;pointer-events:none;transition:opacity .25s}
+    .lightbox.show{opacity:1;pointer-events:auto}
+    .lightbox img{max-width:92%;max-height:86%;border-radius:8px}
+
+    /* small helpers */
+    .muted{color:var(--muted)}
+    .center{display:flex;align-items:center;justify-content:center}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav container">
+      <div class="brand">
+        <div class="logo">R</div>
+        <div>
+          <h1>Rubland Smoke Houses</h1>
+          <p class="muted">Accredited by Rubber Board of India • Since 2005</p>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="center">
+        <a class="cta" href="tel:+919745344800">Call: +91 97453 44800</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <h2>Rubland Smoke Houses — Trusted by Kerala’s Planters</h2>
+          <p class="lead">Rubland Industries has been a recognized name in Kerala since 2005, managed by Mr. Soy Vattapillil. We design and build robust rubber smoke houses and allied products that help planters get higher-grade smoked rubber sheets.</p>
+          <div class="hero-buttons">
+            <button class="btn" onclick="scrollToSection('products')">Explore Products</button>
+            <button class="btn btn-ghost" onclick="scrollToSection('contact')">Contact Us</button>
+          </div>
+          <div style="height:18px"></div>
+          <div class="card small-stat">
+            <div style="width:12px;height:12px;border-radius:4px;background:var(--glow)"></div>
+            <div>
+              <div style="font-weight:700">1000+ Installed</div>
+              <div class="muted" style="font-size:13px">Across Kerala in recent years</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual card">
+          <div class="hero-image" id="heroImage" style="background-image:url('assets/hero-placeholder.jpg')"></div>
+          <canvas class="smoke-canvas" id="smokeCanvas"></canvas>
+          <div class="hero-foreground">
+            <div class="small-stat">
+              <div style="width:10px;height:10px;border-radius:50%;background:var(--glow)"></div>
+              <div>
+                <div style="font-weight:700">Accredited</div>
+                <div class="muted" style="font-size:12px">Rubber Board of India</div>
+              </div>
+            </div>
+            <div class="small-stat">
+              <div style="width:10px;height:10px;border-radius:50%;background:#6b6b6b"></div>
+              <div>
+                <div style="font-weight:700">Since 2005</div>
+                <div class="muted" style="font-size:12px">Experience & Installations</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container">
+        <h3 class="section-title">About Rubland</h3>
+        <div class="about-grid">
+          <div>
+            <p class="lead">Rubland Industries has been a recognized name in Kerala since 2005. Founded and managed by <strong>Mr. Soy Vattapillil</strong>, Rubland focuses on practical, robust smoke house systems and allied equipment that help small and large planters achieve consistent Ribbed Smoked Sheet (RSS) quality. <em>(Replace or extend this paragraph with exact content from rubland.com where needed.)</em></p>
+            <p class="lead">We are accredited by the Rubber Board of India and provide end-to-end installation support from design through commissioning.</p>
+            <div style="height:20px"></div>
+            <div class="timeline card">
+              <div class="timeline-item"><strong>2005</strong><div style="flex:1">Company founded</div></div>
+              <div class="timeline-item"><strong>2015</strong><div style="flex:1">Fire Tech Incinerator launched</div></div>
+              <div class="timeline-item"><strong>2020</strong><div style="flex:1">1000+ installations across Kerala</div></div>
+            </div>
+          </div>
+
+          <aside>
+            <div class="card">
+              <h4>Quick Info</h4>
+              <p class="muted">Founder: <strong>Mr. Soy Vattapillil</strong></p>
+              <p class="muted">Phone: <a href="tel:+919745344800">+91 97453 44800</a></p>
+              <p class="muted">Email: <a href="mailto:info@rubland.com">info@rubland.com</a></p>
+              <p class="muted">Location: Thodupuzha / Karimannoor area, Kerala</p>
+            </div>
+            <div style="height:16px"></div>
+            <div class="card">
+              <h4>Certifications</h4>
+              <p class="muted">Accredited by Rubber Board of India</p>
+              <p class="muted">Manufacturing & Installation Standards</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section id="products">
+      <div class="container">
+        <h3 class="section-title">Products & Solutions</h3>
+        <p class="lead">Every product listing below is a compact summary. Replace the text with full descriptions from rubland.com to match exact copy and specs.</p>
+        <div style="height:18px"></div>
+        <div class="products-grid">
+          <div class="product">
+            <img src="assets/product-placeholder-1.jpg" alt="Rubland Smoke House">
+            <h4>Rubland Smoke House</h4>
+            <p class="muted">Robust smoke house design for consistent drying and smoking of rubber sheets. (Replace with exact rubland.com product text.)</p>
+          </div>
+
+          <div class="product">
+            <img src="assets/product-placeholder-2.jpg" alt="Rubland Fire Tech Incinerator">
+            <h4>Rubland Fire Tech Incinerator</h4>
+            <p class="muted">High-efficiency incinerator and firebox systems for controlled heating and smoke. (Replace text)</p>
+          </div>
+
+          <div class="product">
+            <img src="assets/product-placeholder-3.jpg" alt="Chimney & Fans">
+            <h4>Chimneys, Fans & Burners</h4>
+            <p class="muted">Chimneys designed for optimal airflow with durable fans and burners. (Replace text)</p>
+          </div>
+
+          <div class="product">
+            <img src="assets/product-placeholder-4.jpg" alt="Firebox">
+            <h4>Firebox</h4>
+            <p class="muted">Insulated fireboxes with efficient fuel usage and stable temperature control.</p>
+          </div>
+
+          <div class="product">
+            <img src="assets/product-placeholder-5.jpg" alt="Accessories">
+            <h4>Accessories & Spare Parts</h4>
+            <p class="muted">All accessories required for maintenance and upgrades.</p>
+          </div>
+
+          <div class="product">
+            <img src="assets/product-placeholder-6.jpg" alt="Custom Solutions">
+            <h4>Custom Smoke House Solutions</h4>
+            <p class="muted">Tailored solutions for plantations of all sizes. Contact us for a site visit and quote.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Advantages -->
+    <section id="advantages">
+      <div class="container">
+        <h3 class="section-title">Why Choose Rubland</h3>
+        <div class="advantages">
+          <div class="adv">
+            <strong>Built to Last</strong>
+            <p class="muted">Durable construction, high-grade materials.</p>
+          </div>
+          <div class="adv">
+            <strong>Certified</strong>
+            <p class="muted">Accredited by the Rubber Board of India.</p>
+          </div>
+          <div class="adv">
+            <strong>Experienced Team</strong>
+            <p class="muted">Decades of experience in installations and support.</p>
+          </div>
+          <div class="adv">
+            <strong>After-Sales Support</strong>
+            <p class="muted">Local technicians and spare parts available.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INSTALLATIONS & NEWS -->
+    <section id="installations">
+      <div class="container">
+        <h3 class="section-title">Installations & News</h3>
+        <div style="display:flex;gap:18px;align-items:flex-start">
+          <div style="flex:1">
+            <div class="counters">
+              <div class="counter">
+                <strong id="countInstall">0</strong>
+                <div class="muted">Smoke houses installed</div>
+              </div>
+              <div class="counter">
+                <strong id="countYears">0</strong>
+                <div class="muted">Years of service</div>
+              </div>
+            </div>
+
+            <div style="height:16px"></div>
+            <div class="news-list">
+              <div class="news-item"><strong>Domestic Rubber Price</strong><div class="muted">Latest updates and notes.</div></div>
+              <div class="news-item"><strong>New Installations</strong><div class="muted">Completed projects and site visits.</div></div>
+            </div>
+          </div>
+          <div style="width:360px">
+            <div class="card center" style="height:160px;flex-direction:column;gap:8px">
+              <div style="font-weight:700">Installation Map</div>
+              <div class="muted">Kerala focus — Thodupuzha / Karimannoor and surrounding districts</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery">
+      <div class="container">
+        <h3 class="section-title">Gallery</h3>
+        <p class="lead">Photos of smoke houses, installations and workshop. Replace placeholder images with actual rubland.com images or allow AI to generate similar images.</p>
+        <div style="height:12px"></div>
+        <div class="gallery-grid">
+          <img src="assets/gallery-1.jpg" alt="Installation 1" data-full="assets/gallery-1.jpg">
+          <img src="assets/gallery-2.jpg" alt="Installation 2" data-full="assets/gallery-2.jpg">
+          <img src="assets/gallery-3.jpg" alt="Installation 3" data-full="assets/gallery-3.jpg">
+          <img src="assets/gallery-4.jpg" alt="Installation 4" data-full="assets/gallery-4.jpg">
+        </div>
+      </div>
+    </section>
+
+    <!-- BROCHURES -->
+    <section id="downloads">
+      <div class="container">
+        <h3 class="section-title">Brochures & Downloads</h3>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <div class="card" style="min-width:220px;flex:1">
+            <strong>Rubland Product Brochure</strong>
+            <p class="muted">PDF — 2MB (replace link with actual brochure file)</p>
+            <div style="height:10px"></div>
+            <a class="btn" href="#">Download</a>
+          </div>
+          <div class="card" style="min-width:220px;flex:1">
+            <strong>Installation Guide</strong>
+            <p class="muted">Step-by-step commissioning guide (placeholder)</p>
+            <div style="height:10px"></div>
+            <a class="btn" href="#">Download</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container">
+        <h3 class="section-title">Contact Rubland</h3>
+        <div class="contact-grid">
+          <div>
+            <form id="contactForm" onsubmit="return fakeSubmit(event)">
+              <input type="text" id="name" placeholder="Your name" required>
+              <input type="email" id="email" placeholder="Your email" required>
+              <input type="tel" id="phone" placeholder="Phone (optional)">
+              <textarea id="message" rows="5" placeholder="Message" required></textarea>
+              <div style="display:flex;gap:12px">
+                <button class="btn" type="submit">Send Message</button>
+                <a class="btn btn-ghost" href="https://wa.me/919745344800" target="_blank">WhatsApp</a>
+              </div>
+            </form>
+          </div>
+
+          <aside>
+            <div class="map-placeholder card">Map Placeholder — replace with Google Maps embed or image</div>
+            <div style="height:12px"></div>
+            <div class="card">
+              <strong>Contact</strong>
+              <p class="muted">Phone: <a href="tel:+919745344800">+91 97453 44800</a></p>
+              <p class="muted">Email: <a href="mailto:info@rubland.com">info@rubland.com</a></p>
+              <p class="muted">Address: Thodupuzha / Karimannoor area, Kerala</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <strong>Rubland Smoke Houses</strong>
+        <div class="muted">© <span id="year"></span> Rubland Industries • All rights reserved</div>
+      </div>
+      <div style="display:flex;gap:12px;align-items:center">
+        <div class="muted">Website by</div>
+        <div style="display:flex;align-items:center;gap:8px;padding:8px 12px;border-radius:10px;background:linear-gradient(180deg,#fff,#fff);box-shadow:0 10px 24px rgba(92,70,56,0.08);border:1px solid rgba(0,0,0,0.04)">
+          <img src="assets/jj-logo.png" alt="JJ Coders" style="width:36px;height:36px;border-radius:8px">
+          <div style="font-weight:700">JJ Coders</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="jj-badge" aria-hidden>
+    <img src="assets/jj-logo.png" alt="JJ">
+    <div style="font-size:13px"><strong>JJ Coders</strong><div class="muted" style="font-size:11px">Build AI • Robotics • Web</div></div>
+  </div>
+
+  <div id="lightbox" class="lightbox" onclick="hideLightbox()"><img src="" alt="lightbox"></div>
+
+  <script>
+    // ====== Helper scroll ======
+    function scrollToSection(id){ document.getElementById(id).scrollIntoView({behavior:'smooth'}); }
+
+    // ====== Fake form submit (frontend only) ======
+    function fakeSubmit(e){ e.preventDefault(); alert('Message sent (demo). For production, connect the form to an email or server.'); return false; }
+
+    // ====== Counters ======
+    function animateCounter(id,to,duration){const el=document.getElementById(id);let start=0;const step=Math.ceil(to/(duration/30));const iv=setInterval(()=>{start+=step;if(start>=to){el.innerText=to;clearInterval(iv);}else el.innerText=start;},30);} 
+    document.addEventListener('DOMContentLoaded',()=>{document.getElementById('year').innerText=new Date().getFullYear();
+      // animate counters when visible
+      const obs=new IntersectionObserver((entries)=>{entries.forEach(en=>{if(en.isIntersecting){animateCounter('countInstall',1000,1400);animateCounter('countYears',20,1200);obs.disconnect();}});},{threshold:0.4});
+      obs.observe(document.getElementById('installations'));
+    });
+
+    // ====== Lightbox ======
+    document.querySelectorAll('.gallery-grid img').forEach(img=>{img.addEventListener('click',()=>{const lb=document.getElementById('lightbox');lb.querySelector('img').src=img.dataset.full || img.src;lb.classList.add('show');});});
+    function hideLightbox(){document.getElementById('lightbox').classList.remove('show');}
+
+    // ====== Simple smoke particle system (canvas) ======
+    (function(){const canvas=document.getElementById('smokeCanvas');if(!canvas) return;const ctx=canvas.getContext('2d');let W,H,particles=[];function resize(){W=canvas.width=canvas.clientWidth;H=canvas.height=canvas.clientHeight;}window.addEventListener('resize',resize);resize();
+      function rand(min,max){return Math.random()*(max-min)+min}
+      class P{constructor(){this.reset();}reset(){this.x=rand(W*0.1,W*0.9);this.y=H+rand(0,50);this.vx=rand(-0.15,0.15);this.vy=rand(-0.3,-1.2);this.size=rand(30,140);this.life=rand(6000,12000);this.start=Date.now();this.opacity=rand(0.05,0.14);}update(){this.x+=this.vx;this.y+=this.vy;this.opacity-=0.0007; if(this.opacity<=0) this.reset(); }draw(){ctx.beginPath();const g=ctx.createRadialGradient(this.x,this.y,this.size*0.05,this.x,this.y,this.size);g.addColorStop(0,'rgba(255,160,64,'+ (this.opacity*0.35) +')');g.addColorStop(1,'rgba(30,30,30,0)');ctx.fillStyle=g;ctx.arc(this.x,this.y,this.size,0,Math.PI*2);ctx.fill();}}
+      for(let i=0;i<18;i++) particles.push(new P());
+      function loop(){ctx.clearRect(0,0,W,H);particles.forEach(p=>{p.update();p.draw();});requestAnimationFrame(loop);}loop();
+    })();
+
+    // ====== Smooth parallax on hero image ======
+    (function(){const hero=document.getElementById('heroImage');if(!hero) return;document.addEventListener('mousemove',e=>{const w=window.innerWidth;const h=window.innerHeight;const x=(e.clientX - w/2)/w;const y=(e.clientY - h/2)/h;hero.style.transform = `translate(${x*12}px,${y*6}px) scale(1.03)`;});})();
+
+    // ====== Keyboard accessibility for lightbox (Esc to close) ======
+    document.addEventListener('keydown',e=>{if(e.key==='Escape') hideLightbox();});
+
+    // ====== Small image loader fallback ======
+    // If assets are missing, replace with simple colored placeholders
+    (function(){const imgs=document.querySelectorAll('img');imgs.forEach(img=>{img.addEventListener('error',()=>{img.style.background='#ddd';img.src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500"><rect width="100%" height="100%" fill="%23efefef"/><text x="50%" y="50%" font-size="24" text-anchor="middle" fill="%23666">Image placeholder</text></svg>';});});})();
+
+  </script>
+</body>
+</html>
