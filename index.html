@@ -1,684 +1,283 @@
-
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-
-    <link rel="icon" type="images" href="https://rubland.com/templates/industrix/favicon.ico">
-
-
-
-    <meta name="google-site-verification" content="pscapgoebuzldLe7DZMstKcbQ1VfC4a6cZyWF5WgCSo" />
-
-
-
-
-    <!-- PRIMARY META -->
-<title>Rubland | Rubber Smoke House Builders & Rubber Drying Solutions in Kerala</title>
-
-<meta name="description" content="Rubland is a trusted builder of rubber smoke houses and industrial smoking solutions for rubber planters in Kerala. We provide high-quality smoke house construction, incinerators, and ribbed smoked sheet solutions.">
-
-<meta name="keywords" content="
-Rubland,
-rubland smoke house,
-rubber smoke house,
-rubber smokehouse builders,
-rubland Kerala,
-rubber plantation equipment,
-smoke house construction Kerala,
-rubber drying house,
-rubber sheet smoking,
-natural rubber processing,
-ribbed smoked sheet solutions,
-rubland incinerator,
-rubland fire tech incinerator,
-rubland products,
-rubber smoke house price,
-rubland smoke house installer,
-rubland rubber planter services,
-rubland industrial solutions,
-smoke house furnace,
-best smoke house Kerala,
-rubber planter tools,
-rubland contact Kerala,
-rubland Thodupuzha,
-rubland Karimannoor,
-rubland industry,
-rubber dryer solutions,
-rubber sheet grade improvement,
-smoke house design,
-rubland trusted builders,
-Rubland,
-Rubber Smoke House,
-Rubber Smoke House Kerala,
-Rubber Smoke House Ernakulam,
-Rubber Smoke House Idukki,
-Rubber Smoke House Kottayam,
-Rubber Smoke House Thrissur,
-Rubber Smoke House Palakkad,
-Rubber Smoke House Malappuram,
-Rubber Smoke House Kozhikode,
-Rubber Smoke House Kannur,
-Rubber Smoke House Kasaragod,
-Rubber Smoke House Wayanad,
-Rubber Smoke House Alappuzha,
-Rubber Smoke House Pathanamthitta,
-Rubber Smoke House Kollam,
-Rubber Smoke House Thiruvananthapuram,
-
-Rubber Smoke House Perumbavoor,
-Rubber Smoke House Angamaly,
-Rubber Smoke House Aluva,
-Rubber Smoke House Kalamassery,
-Rubber Smoke House Kochi,
-Rubber Smoke House Muvattupuzha,
-Rubber Smoke House Kothamangalam,
-Rubber Smoke House Thodupuzha,
-Rubber Smoke House Peerumade,
-Rubber Smoke House Kanjirappally,
-Rubber Smoke House Manjeri,
-Rubber Smoke House Tirur,
-Rubber Smoke House Ottappalam,
-Rubber Smoke House Chalakkudy,
-Rubber Smoke House Irinjalakuda,
-Rubber Smoke House Guruvayoor,
-Rubber Smoke House Thrissur Town
-">
-
-<meta name="author" content="Rubland">
-<meta name="robots" content="index, follow">
-<meta name="language" content="English">
-<meta name="revisit-after" content="1 days">
-
-<!-- OPEN GRAPH FOR SOCIAL -->
-<meta property="og:title" content="Rubland | Rubber Smoke House Builders & Solutions in Kerala">
-<meta property="og:description" content="Get high-quality rubber smoke house construction and rubber processing solutions from Rubland — trusted by rubber planters across Kerala.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://jjcoders00.github.io/rubland">
-<meta property="og:image" content="https://rubland.com/images/rubland-logo.png">
-
-<!-- TWITTER META -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Rubland | Rubber Smoke House Builders in Kerala">
-<meta name="twitter:description" content="Rubland offers premium rubber smoke house construction and incinerator products for natural rubber processors in Kerala.">
-<meta name="twitter:image" content="https://rubland.com/images/rubland-logo.png">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="canonical" href="https://jjcoders00.github.io/rubland">
-
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- AOS Animation CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        rubland: {
-                            primary: '#006400', // Darker Green matching logo
-                            lightGreen: '#4CAF50',
-                            accent: '#FFD700', // Gold/Yellow
-                            dark: '#1a1a1a',
-                            light: '#f4f4f4'
-                        }
-                    },
-                    fontFamily: {
-                        sans: ['Roboto', 'sans-serif'],
-                        heading: ['Montserrat', 'sans-serif'],
-                    },
-                    animation: {
-                        'float': 'float 6s ease-in-out infinite',
-                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-                        'spin-slow': 'spin 12s linear infinite',
-                    },
-                    keyframes: {
-                        float: {
-                            '0%, 100%': { transform: 'translateY(0)' },
-                            '50%': { transform: 'translateY(-20px)' },
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-
-    <style>
-        /* Custom Styles */
-        .glass-panel {
-            background: rgba(255, 255, 255, 0.9);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.5);
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
-        }
-        
-        .hero-gradient {
-            background: linear-gradient(135deg, rgba(0,100,0,0.9) 0%, rgba(0,0,0,0.8) 100%);
-        }
-
-        .text-shadow-lg {
-            text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
-        }
-
-        .marquee-container {
-            overflow: hidden;
-            white-space: nowrap;
-        }
-
-        .marquee-content {
-            display: inline-block;
-            animation: marquee 80s linear infinite;
-        }
-
-        @keyframes marquee {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-        }
-
-        /* Hero Slider Fade */
-        .hero-slide {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-size: cover;
-            background-position: center;
-            opacity: 0;
-            transition: opacity 1.5s ease-in-out;
-            z-index: -1;
-        }
-        .hero-slide.active {
-            opacity: 1;
-        }
-
-        /* Tilt Effect base */
-        .tilt-card {
-            transition: transform 0.1s ease;
-        }
-
-        .seo-locations {
-            display: none;
-        }
-    </style>
+    <title>Rubland Industries | Advanced Rubber Smoke Houses</title>
+    <meta name="description" content="Rubland Industries - Kerala's pioneer in energy-efficient rubber processing technology. Advanced smoke houses for RSS production, trusted by 1000+ planters.">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap">
 </head>
-<body class="font-sans text-gray-800 bg-gray-50 overflow-x-hidden">
+<body>
 
+<!-- Scroll Progress -->
+<!-- (injected by JS) -->
 
-
-
-    <section class="seo-locations">
-  <h2>Rubber Smoke House Services Across Kerala</h2>
-  <p>
-    Rubland provides rubber smoke house construction services across
-    Ernakulam, Idukki, Kottayam, Thrissur, Palakkad, Malappuram,
-    Kozhikode, Kannur, Kasaragod, Wayanad, Alappuzha,
-    Pathanamthitta, Kollam, and Thiruvananthapuram.
-  </p>
-</section>
-
-
-    <!-- Floating WhatsApp -->
-    <a href="https://wa.me/919745344800" class="fixed bottom-6 right-6 z-50 hover:scale-110 transition duration-300 animate-bounce">
-        <img src="https://rubland.com/images/whatsapp-icon.png" alt="WhatsApp" class="w-14 h-14 drop-shadow-lg">
-    </a>
-
-    <!-- Top Bar -->
-    <div class="bg-rubland-dark text-white py-2 text-xs border-b border-gray-700">
-        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
-            <div class="flex items-center space-x-6 mb-2 md:mb-0">
-                <span class="text-rubland-accent font-bold tracking-wider animate-pulse"><i class="fas fa-certificate mr-1"></i> Accredited by Rubber Board of India</span>
-                <span class="hidden md:inline text-gray-400">|</span>
-                <a href="tel:+919747066801" class="hover:text-rubland-accent transition flex items-center"><i class="fas fa-phone-alt mr-2 text-rubland-lightGreen"></i>+91 9747066801</a>
-            </div>
-            <div class="flex space-x-4">
-                <a href="https://www.facebook.com/Rubland-591031470986050/" target="_blank" class="hover:text-blue-500 transition transform hover:-translate-y-1"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="hover:text-red-500 transition transform hover:-translate-y-1"><i class="fab fa-youtube"></i></a>
-                <span class="text-gray-400">Mon-Fri: 10am-8pm</span>
-            </div>
+<!-- ========== NAVIGATION ========== -->
+<nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+        <div class="nav-logo">
+            <span>Rubland</span> Industries
         </div>
-    </div>
 
-    <!-- Navigation -->
-    <nav class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-lg transition-all duration-300" id="navbar">
-        <div class="container mx-auto px-4 py-2 flex justify-between items-center">
-            <!-- Logo -->
-            <a href="#" class="flex items-center group">
-                <img src="https://rubland.com/images/rubland-logo.png" alt="Rubland Logo" class="h-16 md:h-20 object-contain transition transform group-hover:scale-105">
-            </a>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="about-us.html">About Us</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+        </div>
 
-            <!-- Desktop Menu -->
-            <div class="hidden lg:flex space-x-8 font-bold text-gray-700 text-sm uppercase tracking-wide">
-                <a href="#home" class="hover:text-rubland-primary transition border-b-2 border-transparent hover:border-rubland-primary py-1">Home</a>
-                <a href="#about" class="hover:text-rubland-primary transition border-b-2 border-transparent hover:border-rubland-primary py-1">About Us</a>
-                <a href="#products" class="hover:text-rubland-primary transition border-b-2 border-transparent hover:border-rubland-primary py-1">Products</a>
-                <a href="#gallery" class="hover:text-rubland-primary transition border-b-2 border-transparent hover:border-rubland-primary py-1">Gallery</a>
-                <a href="#news" class="hover:text-rubland-primary transition border-b-2 border-transparent hover:border-rubland-primary py-1">News</a>
-                <a href="#contact" class="bg-rubland-primary text-white px-6 py-2 rounded-full hover:bg-rubland-dark transition shadow-lg transform hover:-translate-y-0.5">Contact</a>
-            </div>
-
-            <!-- Mobile Menu Button -->
-            <button id="menu-btn" class="lg:hidden text-rubland-primary text-3xl focus:outline-none">
-                <i class="fas fa-bars"></i>
+        <div class="nav-right">
+            <a href="https://wa.me/919745344800?text=Hello%20Rubland%20Industries,%20I%20want%20to%20know%20more%20about%20your%20Smoke%20Houses." class="btn-primary" target="_blank">Consult on WhatsApp</a>
+            <button class="nav-toggle" aria-label="Menu">
+                <span></span><span></span><span></span>
             </button>
         </div>
+    </div>
 
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="bg-white border-t lg:hidden hidden shadow-inner">
-            <div class="flex flex-col p-6 space-y-4 font-bold text-gray-700 uppercase">
-                <a href="#home" class="hover:text-rubland-primary">Home</a>
-                <a href="#about" class="hover:text-rubland-primary">About Us</a>
-                <a href="#products" class="hover:text-rubland-primary">Products</a>
-                <a href="#gallery" class="hover:text-rubland-primary">Recent Works</a>
-                <a href="#contact" class="text-rubland-primary">Contact</a>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="index.html" class="active">Home</a>
+        <a href="about-us.html">About Us</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
+
+<!-- ========== HERO SECTION ========== -->
+<section class="hero" id="hero">
+    <div class="hero-bg">
+        <div class="hero-bg-overlay"></div>
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAB-auB7iWB05tBFPjq1jyOGw6db5ofIu-bL_wWPTYKSvOg9CGbNcToU68_s0WzZH2Inlir34_idNvN0qXFt7-dsR2dsTCP_ENpxYWWku_RvKlEW2Ar09ApRFu7yINVAD1vrhWsfI9kzu3HXkdnAqqoLlzB5plirjwi7aW9ruRW7tdLMYXehLYsB7n2yTvcn6biDqgsFq77IWSEPVH1MVPjhIidNxu0EebhAULovaXFQc4JklKiF63JH4iSESVtBTpe1EeyzVJ_oDQz" alt="Modern industrial rubber smokehouse facility">
+    </div>
+    <canvas id="particles-canvas"></canvas>
+
+    <div class="hero-content">
+        <div class="hero-inner">
+            <div class="hero-badge">
+                <span class="material-symbols-outlined hero-badge-icon">verified_user</span>
+                <span class="hero-badge-text">Rubber Board of India Certified</span>
             </div>
-        </div>
-    </nav>
 
-    <!-- Hero Section with Slideshow -->
-    <section id="home" class="relative h-[85vh] min-h-[600px] flex items-center justify-center overflow-hidden">
-        <!-- Slideshow Backgrounds -->
-        <div class="absolute inset-0 z-0">
-            <div class="hero-slide active" style="background-image: url('http://www.rubland.com/images/slide1.jpg');"></div>
-            <div class="hero-slide" style="background-image: url('https://designs.excelsisdeo.com/rubland/images/slide2.jpg');"></div>
-            <!-- Fallback/Overlay -->
-            <div class="absolute inset-0 bg-black/50 z-10"></div>
-            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/40 z-10"></div>
-        </div>
-
-        <!-- Content -->
-        <div class="container mx-auto px-4 text-center z-20 relative">
-            <div class="inline-block border-2 border-rubland-accent bg-black/30 backdrop-blur-sm px-6 py-2 rounded-full mb-8 transform hover:scale-105 transition duration-300" data-aos="zoom-in">
-                <span class="uppercase tracking-widest text-sm font-bold text-rubland-accent shadow-black drop-shadow-md">
-                    <i class="fas fa-star mr-2"></i> Smokehouse Technology Leaders
-                </span>
-            </div>
-            
-            <h1 class="font-heading font-extrabold text-4xl md:text-6xl lg:text-7xl mb-6 leading-tight text-white text-shadow-lg" data-aos="fade-up" data-aos-duration="1200">
-                Welcome to <span class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-rubland-accent">Rubland</span>
+            <h1 class="hero-title">
+                Advanced <span class="accent">Smoke Houses</span> for RSS Production
             </h1>
-            
-            <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto text-gray-200 font-light" data-aos="fade-up" data-aos-delay="200">
-                Recognized name in Kerala since 2005. Managed by <span class="font-semibold text-white">Mr. Soy Vattapillil</span>.
-                <br>Trust in rubber smoke house building.
+
+            <p class="hero-desc">
+                Trusted by over 1,000 planters across Kerala. Drying time reduced to <span class="highlight">72 hours</span> with 90% less firewood consumption.
             </p>
-            
-            <div class="flex flex-col sm:flex-row justify-center gap-6" data-aos="fade-up" data-aos-delay="400">
-                <a href="#products" class="px-10 py-4 bg-rubland-primary text-white rounded-lg font-bold text-lg hover:bg-rubland-lightGreen transition shadow-2xl transform hover:-translate-y-1 hover:shadow-green-500/50 flex items-center justify-center">
-                    <i class="fas fa-cogs mr-2"></i> Our Products
-                </a>
-                <a href="#contact" class="px-10 py-4 bg-white/10 border-2 border-white text-white rounded-lg font-bold text-lg hover:bg-white hover:text-rubland-primary transition transform hover:-translate-y-1 backdrop-blur-sm flex items-center justify-center">
-                    <i class="fas fa-paper-plane mr-2"></i> Get Enquiry
-                </a>
-            </div>
-        </div>
 
-        <!-- Regional Banner (Floating) -->
-        <div class="absolute bottom-10 right-4 md:right-10 z-20 w-64 md:w-80 animate-float hidden md:block" data-aos="fade-left" data-aos-delay="800">
-            <img src="https://rubland.com/images/malayalambanner/Kerala-rubbersmokehouse.png" alt="Kerala Rubber Smoke House" class="w-full drop-shadow-2xl">
-        </div>
-    </section>
-
-    <!-- Stats Bar -->
-    <div class="bg-rubland-primary relative z-30 shadow-2xl">
-        <div class="container mx-auto px-4 py-8">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 divide-y md:divide-y-0 md:divide-x divide-green-700 text-white text-center">
-                <div class="p-4" data-aos="fade-up" data-aos-delay="0">
-                    <div class="text-5xl font-heading font-bold mb-2">1000+</div>
-                    <div class="text-green-200 uppercase tracking-wider text-sm">Installations in Kerala</div>
-                </div>
-                <div class="p-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="text-5xl font-heading font-bold mb-2">2005</div>
-                    <div class="text-green-200 uppercase tracking-wider text-sm">Established Year</div>
-                </div>
-                <div class="p-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="text-5xl font-heading font-bold mb-2">100%</div>
-                    <div class="text-green-200 uppercase tracking-wider text-sm">Client Satisfaction</div>
-                </div>
+            <div class="hero-cta">
+                <a href="products.html" class="btn-hero-primary">View Models</a>
+                <a href="contact.html" class="btn-hero-secondary">Get a Quote</a>
             </div>
         </div>
     </div>
 
-    <!-- About & Profile Section -->
-    <section id="about" class="py-20 bg-gray-100 relative overflow-hidden">
-        <div class="absolute top-0 left-0 w-64 h-64 bg-green-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
-        <div class="absolute top-0 right-0 w-64 h-64 bg-yellow-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
-
-        <div class="container mx-auto px-4 relative z-10">
-            <div class="flex flex-col lg:flex-row gap-12 items-start">
-                
-                <!-- Video/Media Column -->
-                <div class="lg:w-1/2 w-full" data-aos="fade-right">
-                    <div class="bg-white p-2 rounded-xl shadow-2xl transform rotate-1 hover:rotate-0 transition duration-500">
-                        <!-- Using YouTube iframe from old code -->
-                        <div class="aspect-w-16 aspect-h-9 w-full rounded-lg overflow-hidden relative group">
-                            <iframe src="https://www.youtube.com/embed/FNsp-aJ1Jws?rel=0" title="Rubland Video" class="w-full h-[350px] object-cover" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    
-                    <!-- Brochure Download -->
-                    <div class="mt-8 bg-gradient-to-r from-rubland-dark to-gray-800 rounded-xl p-6 text-white shadow-xl flex items-center justify-between transform hover:scale-105 transition cursor-pointer group" onclick="window.open('https://rubland.com/images/brochure-rubland-karimannor-rubber-smoke-house-kerala.pdf')">
-                        <div>
-                            <h3 class="font-bold text-xl text-rubland-accent group-hover:text-white transition">Download Brochure</h3>
-                            <p class="text-sm text-gray-400">Get detailed specifications & pricing</p>
-                        </div>
-                        <i class="fas fa-file-pdf text-4xl text-rubland-accent group-hover:text-white transition group-hover:animate-bounce"></i>
-                    </div>
-                </div>
-
-                <!-- Text Content -->
-                <div class="lg:w-1/2 w-full" data-aos="fade-left">
-                    <div class="flex items-center mb-6">
-                        <div class="h-1 w-12 bg-rubland-primary mr-4"></div>
-                        <span class="text-rubland-primary font-bold tracking-widest uppercase">Company Profile</span>
-                    </div>
-                    <h2 class="text-4xl md:text-5xl font-heading font-extrabold text-gray-800 mb-6">
-                        Revolutionizing <br><span class="text-rubland-primary">Rubber Processing</span>
-                    </h2>
-                    <p class="text-gray-600 text-lg leading-relaxed mb-6">
-                        Natural rubber in India is mainly produced by small holder farmers. Due to the lack of appropriate dryers, more than 80% of the total production has to be sold as low-grade Ribbed Smoked Sheet (RSS) for a relatively low price.
-                    </p>
-                    <p class="text-gray-600 text-lg leading-relaxed mb-8 border-l-4 border-rubland-accent pl-4 bg-white py-2 shadow-sm rounded-r-lg">
-                        <strong>Rubland Industries</strong> bridges this gap. Smoking the sheets produces high-grade RSS, which sells for considerably more. Our smoke houses prevent oxidation and mould growth.
-                    </p>
-                    
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div class="flex items-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition">
-                            <i class="fas fa-check-circle text-green-500 text-xl mr-3"></i>
-                            <span class="font-semibold text-gray-700">Prevent Oxidation</span>
-                        </div>
-                        <div class="flex items-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition">
-                            <i class="fas fa-check-circle text-green-500 text-xl mr-3"></i>
-                            <span class="font-semibold text-gray-700">Better Price Realization</span>
-                        </div>
-                        <div class="flex items-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition">
-                            <i class="fas fa-check-circle text-green-500 text-xl mr-3"></i>
-                            <span class="font-semibold text-gray-700">Mould Prevention</span>
-                        </div>
-                        <div class="flex items-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition">
-                            <i class="fas fa-check-circle text-green-500 text-xl mr-3"></i>
-                            <span class="font-semibold text-gray-700">Quick Drying</span>
-                        </div>
-                    </div>
-                </div>
+    <!-- Prestige Badge -->
+    <div class="prestige-badge">
+        <p class="prestige-label">Official Accreditation</p>
+        <div class="prestige-inner">
+            <div class="prestige-logo">
+                <img src="rblogo.jpeg" alt="Rubber Board of India Logo">
+            </div>
+            <div>
+                <div class="prestige-info-title">Rubber Board of India</div>
+                <div class="prestige-info-sub">Approved Design & Tech</div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Products Showcase (Glassmorphism) -->
-    <section id="products" class="py-20 bg-[url('https://images.unsplash.com/photo-1598335624129-98319323bb7e?q=80&w=1920&auto=format&fit=crop')] bg-cover bg-fixed relative">
-        <div class="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
-        <div class="container mx-auto px-4 relative z-10">
-            <div class="text-center mb-16" data-aos="fade-down">
-                <h2 class="text-4xl font-heading font-bold text-white mb-4">Our Premium Products</h2>
-                <div class="w-24 h-1 bg-rubland-accent mx-auto rounded-full"></div>
-            </div>
+<!-- ========== STATS SECTION ========== -->
+<section class="stats-section" id="stats">
+    <div class="stats-grid stagger-children">
+        <div class="stat-card reveal">
+            <div class="stat-value" data-counter="20" data-suffix="+">0</div>
+            <div class="stat-label">Years of Experience</div>
+        </div>
+        <div class="stat-card reveal">
+            <div class="stat-value orange" data-counter="1000" data-suffix="+">0</div>
+            <div class="stat-label">Projects Completed</div>
+        </div>
+        <div class="stat-card reveal">
+            <div class="stat-value" data-counter="100" data-suffix="%">0</div>
+            <div class="stat-label">Accredited</div>
+        </div>
+        <div class="stat-card reveal">
+            <div class="stat-value orange" data-counter="72" data-suffix="h">0</div>
+            <div class="stat-label">Drying Cycle</div>
+        </div>
+    </div>
+</section>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Product 1 -->
-                <div class="glass-panel rounded-2xl overflow-hidden hover:transform hover:-translate-y-2 transition duration-500 group p-2" data-aos="fade-up" data-aos-delay="0">
-                    <div class="relative overflow-hidden rounded-xl h-64">
-                        <!-- Using smokehouse image from code -->
-                        <img src="https://rubland.com/images/smokehouseimages/12.jpg" alt="Rubber Smoke House" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
-                            <h3 class="text-2xl font-bold text-white">Rubber Smoke House</h3>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <p class="text-gray-600 mb-6">
-                            Cheaper compare to other smoke houses available in market but stronger. Controlled air supply prevents oxidation.
-                        </p>
-                        <a href="#contact" class="inline-flex items-center text-rubland-primary font-bold hover:text-rubland-accent transition">
-                            View Details <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Product 2 -->
-                <div class="glass-panel rounded-2xl overflow-hidden hover:transform hover:-translate-y-2 transition duration-500 group p-2" data-aos="fade-up" data-aos-delay="150">
-                    <div class="relative overflow-hidden rounded-xl h-64">
-                         <!-- Fallback generic image or specific if available, using the incinerator concept -->
-                        <img src="data:image/jpeg;base64,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" alt="Incinerator" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700 filter sepia-[.20]">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
-                            <h3 class="text-2xl font-bold text-white">Fire Tech Incinerator</h3>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <p class="text-gray-600 mb-6">
-                            Constructed of heavy, well-insulated materials. Advanced waste treatment process for eco-friendly disposal.
-                        </p>
-                        <a href="#contact" class="inline-flex items-center text-rubland-primary font-bold hover:text-rubland-accent transition">
-                            View Details <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Product 3 -->
-                <div class="glass-panel rounded-2xl overflow-hidden hover:transform hover:-translate-y-2 transition duration-500 group p-2" data-aos="fade-up" data-aos-delay="300">
-                    <div class="relative overflow-hidden rounded-xl h-64">
-                        <img src="https://rubland.com/images/brochure-rubland-karimannor-rubber-smoke-house-kerala.jpg" alt="Ribbed Smoked Sheet" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
-                            <h3 class="text-2xl font-bold text-white">Ribbed Smoked Sheet</h3>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <p class="text-gray-600 mb-6">
-                            Maximize value. Smoking sheets produces grades that sell for considerably more than unsmoked sheets.
-                        </p>
-                        <a href="#contact" class="inline-flex items-center text-rubland-primary font-bold hover:text-rubland-accent transition">
-                            View Details <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
-                    </div>
-                </div>
+<!-- ========== THE RUBLAND ADVANTAGE ========== -->
+<section class="advantage-section" id="advantage">
+    <div class="advantage-inner">
+        <div class="advantage-image-wrap reveal-left">
+            <div class="advantage-image-glow"></div>
+            <img class="advantage-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoSgV990mW2XjwJhCB6OWJu0EZKZiNl4d1yq_OOQmxrYgRQxTeF_LfTgbP1esSsNq11In7Vitof-qM91IhNN1oB-WHh3uZzyiUOyKVc8ubXDV9az7r14qU9OIvIckhgA88T-BpgPR5wlrkNBA49cbwX0U-C0Dv-vmQY_3tp3iG2XfUHAMnKALeDwB_S_o6a_WHzgjMfuKqJSIOgDQjnlvaQG6up3hkCdNp4bpTsRNbHBCfgoc6dzSk0kStw5wbwJV424cYSQr4yA5T" alt="High precision industrial furnace interior">
+            <div class="advantage-overlay">
+                <span class="material-symbols-outlined advantage-overlay-icon">local_fire_department</span>
+                <h4>Proprietary Fire Tech™</h4>
+                <p>Engineered for maximum thermal efficiency and zero-burn safety.</p>
             </div>
         </div>
-    </section>
 
-    <!-- News & Updates Section -->
-    <section id="news" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-heading font-bold text-center text-gray-800 mb-12" data-aos="fade-up">Latest News & Events</h2>
-            
-            <div class="flex flex-col md:flex-row justify-center gap-8">
-                <!-- News Item 1 -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden max-w-md w-full" data-aos="flip-left">
-                    <div class="h-48 overflow-hidden relative">
-                         <!-- News price image from code -->
-                        <img src="https://rubland.com/images/industrix/images/news-price.jpg" alt="Rubber Price" class="w-full h-full object-cover">
-                        <div class="absolute top-4 left-4 bg-rubland-accent text-black font-bold px-3 py-1 rounded text-sm">UPDATED</div>
+        <div class="advantage-text reveal-right">
+            <h2 class="advantage-title">The <span class="accent">Rubland</span> Advantage</h2>
+            <p class="advantage-desc">We combine traditional expertise with rigorous scientific research to deliver the most efficient rubber processing solutions in the industry.</p>
+
+            <div class="feature-list">
+                <div class="feature-item">
+                    <div class="feature-icon-box">
+                        <span class="material-symbols-outlined">biotech</span>
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Domestic Rubber Price</h3>
-                        <p class="text-gray-600 text-sm mb-4">Daily and weekly rubber price and Rubland's Latest Rubber Smoke House Price.</p>
-                        <a href="#" class="text-rubland-primary font-bold hover:underline">Read More</a>
+                    <div>
+                        <h3 class="feature-title">Scientific Approach</h3>
+                        <p class="feature-desc">Precision humidity control and airflow dynamics engineered for consistent results.</p>
                     </div>
                 </div>
-
-                <!-- News Item 2 -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden max-w-md w-full" data-aos="flip-left" data-aos-delay="150">
-                    <div class="h-48 overflow-hidden relative">
-                         <!-- 1000 installations concept -->
-                        <img src="https://rubland.com/images/smokehouseimages/12.jpg" alt="Installations" class="w-full h-full object-cover">
-                        <div class="absolute top-4 left-4 bg-rubland-primary text-white font-bold px-3 py-1 rounded text-sm">MILESTONE</div>
+                <div class="feature-item">
+                    <div class="feature-icon-box">
+                        <span class="material-symbols-outlined">safety_check</span>
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">1000+ Installations</h3>
-                        <p class="text-gray-600 text-sm mb-4">We had successfully built more than 1000 rubber smoke houses inside Kerala from Thiruvananthapuram to Kasargod.</p>
-                        <a href="#" class="text-rubland-primary font-bold hover:underline">Read More</a>
+                    <div>
+                        <h3 class="feature-title">Zero Burns Safety</h3>
+                        <p class="feature-desc">Triple-layered insulation prevents external hotspots and fire hazards.</p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Map Section -->
-    <section class="py-12 bg-white">
-        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-8">
-            <div class="md:w-1/2 text-center md:text-left" data-aos="fade-right">
-                <h2 class="text-3xl font-heading font-bold text-rubland-dark mb-4">Our Global Reach</h2>
-                <p class="text-gray-600 mb-6">From local farms in Idukki to international standards, Rubland connects the world of rubber.</p>
-                 <!-- Map Location Image from code -->
-                <img src="https://rubland.com/images/map-location.jpg" alt="Map Location" class="rounded-xl shadow-lg border-4 border-gray-100">
-            </div>
-            <div class="md:w-1/2" data-aos="fade-left">
-                <!-- World Map from code -->
-                <img src="https://rubland.com/images/industrix/map/worldmap.png" alt="World Map" class="w-full opacity-80 hover:opacity-100 transition duration-500">
-            </div>
-        </div>
-    </section>
-
-    <!-- Locations Marquee -->
-    <div class="bg-rubland-dark py-4 border-y border-gray-700">
-        <div class="container mx-auto px-4">
-            <div class="marquee-container">
-                <div class="marquee-content text-sm text-gray-400 font-medium">
-                    PERUMBAVOOR • ANGAMALY • ALUVA • KALAMASSERY • PARAVUR • VYPEEN • KOCHI • TRIPUNITHURA • ERNAKULAM • THRIKKAKARA • KUNNATHUNAD • PIRAVOM • MUVATTUPUZHA • KOTHAMANGALAM • DEVIKULAM • IDUKKI • PEERUMADE • THODUPUZHA • UDUMBANCHOLA • CHANGANASSERY • ETTUMANOOR • KADUTHURUTHY • KANJIRAPPALLY • KOTTAYAM • PALAI • POONJAR • PUTHUPPALLY • VAIKOM • ALAPPUZHA • AMBALAPUZHA • AROOR • CHENGANNUR • CHERTHALA • HARIPAD • KAYAMKULAM • KUTTANAD • MAVELIKKARA • ADOOR • ARANMULA • KONNI • RANNI • THIRUVALLA • KOLLAM • THIRUVANANTHAPURAM • KASARAGOD • KANNUR • KOZHIKODE • MALAPPURAM • PALAKKAD • THRISSUR • WAYANAD • CHALAKKUDY • GURUVAYOOR • IRINJALAKUDA • KODUNGALLUR • KUNNAMKULAM • OLLUR • PUTHUKKAD • WADAKKANCHERY •
-                    &nbsp;&nbsp;|&nbsp;&nbsp;
-                    PERUMBAVOOR • ANGAMALY • ALUVA • KALAMASSERY • PARAVUR • VYPEEN • KOCHI • TRIPUNITHURA • ERNAKULAM • THRIKKAKARA • KUNNATHUNAD • PIRAVOM • MUVATTUPUZHA • KOTHAMANGALAM • DEVIKULAM • IDUKKI • PEERUMADE • THODUPUZHA • UDUMBANCHOLA • CHANGANASSERY • ETTUMANOOR • KADUTHURUTHY • KANJIRAPPALLY • KOTTAYAM • PALAI • POONJAR • PUTHUPPALLY • VAIKOM • ALAPPUZHA • AMBALAPUZHA • AROOR • CHENGANNUR • CHERTHALA • HARIPAD • KAYAMKULAM • KUTTANAD • MAVELIKKARA • ADOOR • ARANMULA • KONNI • RANNI • THIRUVALLA • KOLLAM • THIRUVANANTHAPURAM • KASARAGOD • KANNUR • KOZHIKODE • MALAPPURAM • PALAKKAD • THRISSUR • WAYANAD • CHALAKKUDY • GURUVAYOOR • IRINJALAKUDA • KODUNGALLUR • KUNNAMKULAM • OLLUR • PUTHUKKAD • WADAKKANCHERY •
+                <div class="feature-item">
+                    <div class="feature-icon-box">
+                        <span class="material-symbols-outlined">grade</span>
+                    </div>
+                    <div>
+                        <h3 class="feature-title">Premium Grade-4 Output</h3>
+                        <p class="feature-desc">Achieve international quality standards with every batch, consistently.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+</section>
 
-    <!-- Footer -->
-    <footer id="contact" class="bg-[#111] text-gray-400 pt-16 border-t border-green-900">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-                <!-- Brand -->
-                <div data-aos="fade-up">
-                    <img src="https://rubland.com/images/rubland-logo.png" alt="Logo" class="h-12 mb-6 opacity-90">
-                    <p class="text-sm mb-6 leading-relaxed">
-                        The trusted name in rubber smoke house building since 2005. Quality, Durability, and Innovation.
-                    </p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-rubland-primary text-white transition"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://wa.me/919745344800" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-green-500 text-white transition"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-red-600 text-white transition"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-
-                <!-- Contact Info -->
-                <div data-aos="fade-up" data-aos-delay="100">
-                    <h3 class="text-white font-bold text-lg mb-6 border-l-4 border-rubland-primary pl-3">Head Office</h3>
-                    <ul class="space-y-4 text-sm">
-                        <li class="flex items-start">
-                            <i class="fas fa-map-marker-alt text-rubland-primary mt-1 mr-3"></i>
-                            <span>Rubland Smoke House,<br>Thodupuzha Road, Karimannoor P O,<br>Idukki, Kerala, India</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-phone text-rubland-primary mr-3"></i>
-                            <a href="tel:+919747066801" class="hover:text-white transition">+91 9747066801</a>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-phone text-rubland-primary mr-3"></i>
-                            <a href="tel:+919745344800" class="hover:text-white transition">+91 9745344800</a>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-envelope text-rubland-primary mr-3"></i>
-                            <a href="mailto:info@rubland.com" class="hover:text-white transition">info@rubland.com</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Quick Links -->
-                <div data-aos="fade-up" data-aos-delay="200">
-                    <h3 class="text-white font-bold text-lg mb-6 border-l-4 border-rubland-primary pl-3">Information</h3>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="#home" class="hover:text-rubland-accent transition flex items-center"><i class="fas fa-angle-right mr-2 text-xs"></i>Home</a></li>
-                        <li><a href="#about" class="hover:text-rubland-accent transition flex items-center"><i class="fas fa-angle-right mr-2 text-xs"></i>About Us</a></li>
-                        <li><a href="#products" class="hover:text-rubland-accent transition flex items-center"><i class="fas fa-angle-right mr-2 text-xs"></i>Products</a></li>
-                        <li><a href="#news" class="hover:text-rubland-accent transition flex items-center"><i class="fas fa-angle-right mr-2 text-xs"></i>Rubber Price</a></li>
-                        <li><a href="#contact" class="hover:text-rubland-accent transition flex items-center"><i class="fas fa-angle-right mr-2 text-xs"></i>Enquiry</a></li>
-                    </ul>
-                </div>
-
-                <!-- Location Map -->
-                <div data-aos="fade-up" data-aos-delay="300">
-                    <h3 class="text-white font-bold text-lg mb-6 border-l-4 border-rubland-primary pl-3">Find Us</h3>
-                    <!-- Using map location image from code -->
-                    <img src="https://rubland.com/images/map-location.jpg" alt="Map" class="rounded opacity-70 hover:opacity-100 transition duration-300 w-full">
-                </div>
+<!-- ========== HERITAGE & LEADERSHIP ========== -->
+<section class="heritage-section" id="heritage">
+    <div class="heritage-inner">
+        <div class="heritage-image-wrap reveal-left">
+            <div class="heritage-image-glow"></div>
+            <div class="heritage-image-frame">
+                <img src="Soy Peter.jpeg" alt="Mr. Soy Vattapillil, Founder & Managing Director">
             </div>
+        </div>
 
-            <!-- Copyright -->
-            <div class="border-t border-gray-800 py-6 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
-                <p>&copy; 2025 Rubland Rubber Smoke House. All Rights Reserved.</p>
-                <div class="mt-4 md:mt-0 flex items-center" style="text-align: center;">
-                   <a href="https://jjcoders00.github.io/JJ-coders"> <span>Designed with <i class="fas fa-heart text-red-500 mx-1"></i><b style="font-size: 13px; color: red;"> by JJ Coders</b></span></a>
+        <div class="heritage-text reveal-right">
+            <span class="heritage-label">Industrial Heritage Since 2005</span>
+            <h2 class="heritage-title">Precision in Practice</h2>
+            <blockquote class="heritage-quote">
+                "At <span class="accent">Rubland</span>, we don't just build smokehouses; we engineer the future of the rubber industry in Kerala. Every brick laid and every furnace designed carries our commitment to the planter's prosperity."
+            </blockquote>
+            <div class="heritage-author">
+                <div class="heritage-author-line"></div>
+                <div>
+                    <div class="heritage-author-name">Mr. Soy Vattapillil</div>
+                    <div class="heritage-author-role">Founder & Managing Director</div>
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
+</section>
 
-    <!-- Scripts -->
-    <!-- AOS Library -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        // Initialize AOS
-        AOS.init({
-            once: false,
-            mirror: false,
-            duration: 1000,
-            offset: 50,
-            easing: 'ease-out-cubic',
-        });
+<!-- ========== INDUSTRIAL GALLERY ========== -->
+<section class="gallery-section" id="gallery">
+    <div class="gallery-inner">
+        <div class="gallery-header reveal">
+            <div>
+                <h2 class="gallery-title">Industrial <span class="accent">Excellence</span></h2>
+                <p class="gallery-subtitle">Browse our latest installations and engineering marvels across the state.</p>
+            </div>
+            <a href="#" class="gallery-link">Explore Gallery</a>
+        </div>
 
-        // Mobile Menu Toggle
-        const menuBtn = document.getElementById('menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
+        <div class="gallery-grid">
+            <div class="gallery-item reveal">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNp7kUJJzt_JPscsjyQtapGXCcZkyvfKNf_LqCPz-ozJcIQDsA2ijAOaDXB_9qLfFfgVDgmotJX4Cp0hIGw2-fJRZ4fXJ1xdEhpempUKlnB7B1QDIm776D3usio084EkWKe2ZQ2PhrwNVNm_7q4vynSfPOpSMMj-naMPhTNO95ovAm5x8bA-FJRuGUd736_groJnriNOx8LiGbnvpeoq8h8_i0dWlU3weF2cvd8Eu1pPHfbsxxjLkA3-siwToWKxtYq189S1l3Ikou" alt="High-grade rubber sheets in modern smokehouse">
+            </div>
+            <div class="gallery-item reveal">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2Uf3_ifYP9Grp1VGwyvlNgENghUhntHablFlQiOJxSPqzqoyxl_5eNkXOJpVHu05P7Fclh4anVmeCx3l079iRIZ8x7fRaHxoQwudrw9_Yi9rj2VNeiytQkuPxoDJxx3PTG6kO7Y-BmoVTqW6myN_OmpftbAUaRUPXRmU9vxjJ2dcAZrts-2AQMSLDZVeX90CO5fAtT165dlxLb6LO_s76rQ-WmNvuJlsiNqBn0slRTJV-ve47Fh9DIthEUjHEZ9fXwtyCQv9UMMZF" alt="Industrial temperature control panel">
+            </div>
+            <div class="gallery-item reveal">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgAYS9NzEvfiD7Ac54rVg8-oG430dHGHrjz_howjhAn2RDLWE3Pv_65M4zC8vaE5XFHmTGHwR_PWQRmD09G5BQSI_DujKUXk6HKV29VEOHEJcAjolFpoW2wpp9Liz8ANumLpYGg4Xou49kAxppNPt3poYTxYfmTWJbTDfcCvdC0bCw5bO9ZX8BIOYuzMJZ8JenhO0cASqp4IxlQd13kvrPjAL_r2hoSgImlSylmMzaWq-gwydFKOw3fSCK0d8baMQIpkRJ7H4orGyg" alt="External view of completed smokehouse">
+            </div>
+        </div>
+    </div>
+</section>
 
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+    <div class="footer-grid">
+        <div>
+            <div class="footer-brand-name">Rubland</div>
+            <p class="footer-brand-desc">
+                Kerala's pioneer in energy-efficient rubber processing technology. Established 2005. Rubber Board Accredited.
+            </p>
+            <div class="footer-social">
+                <button class="footer-social-btn">
+                    <span class="material-symbols-outlined">share</span>
+                </button>
+                <button class="footer-social-btn">
+                    <span class="material-symbols-outlined">location_on</span>
+                </button>
+            </div>
+        </div>
 
-        // Hero Slider Logic
-        const slides = document.querySelectorAll('.hero-slide');
-        let currentSlide = 0;
+        <div class="footer-col">
+            <h4 class="footer-col-title">Products</h4>
+            <ul>
+                <li><a href="products.html">Compact Series</a></li>
+                <li><a href="products.html">Planter Edition</a></li>
+                <li><a href="products.html">Industrial Furnaces</a></li>
+                <li><a href="products.html">Solar Hybrid Units</a></li>
+            </ul>
+        </div>
 
-        function nextSlide() {
-            slides[currentSlide].classList.remove('active');
-            currentSlide = (currentSlide + 1) % slides.length;
-            slides[currentSlide].classList.add('active');
-        }
+        <div class="footer-col">
+            <h4 class="footer-col-title">Resources</h4>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">MSDS Documents</a></li>
+                <li><a href="#">Sustainability</a></li>
+            </ul>
+        </div>
 
-        setInterval(nextSlide, 5000); // Change slide every 5 seconds
+        <div class="footer-col">
+            <h4 class="footer-col-title">Contact</h4>
+            <p class="footer-contact-address">Thodupuzha Road, Karimannoor P.O.,<br>Idukki District, Kerala - 685581</p>
+            <p class="footer-contact-phone">+91 97470 66801</p>
+            <p class="footer-contact-phone">+91 97453 44800</p>
+            <p class="footer-contact-phone">04862 262802</p>
+            <p class="footer-contact-email">info@rubland.com</p>
+        </div>
+    </div>
 
-        // Navbar Scroll Effect
-        window.addEventListener('scroll', () => {
-            const navbar = document.getElementById('navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('py-2', 'shadow-xl');
-                navbar.classList.remove('py-4');
-            } else {
-                navbar.classList.remove('py-2', 'shadow-xl');
-                navbar.classList.add('py-4');
-            }
-        });
+    <div class="footer-bottom">
+        <div class="footer-bottom-inner">
+            <p>&copy; 2024 Rubland Industries. All Rights Reserved. Rubber Board of India Certified.</p>
+            <div class="footer-bottom-codes">
+                <span>GSTIN: 32AABCR0000A1Z1</span>
+                <span>ISO 9001:2015</span>
+            </div>
+        </div>
+    </div>
 
-        // Smooth Scroll
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                mobileMenu.classList.add('hidden'); 
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+    <div class="footer-jj">
+        Made by <span>JJ Coders</span> &bull; Rubland place Karimannoor in Thodupuzha (Opposite JJ Coders House)
+    </div>
+</footer>
+
+<script src="home.js"></script>
 </body>
 </html>
